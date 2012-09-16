@@ -1,0 +1,51 @@
+@import url(base.css);
+
+#head {
+    height : 50px;
+}
+
+.home {
+	float : left;
+	margin : 8px 8px;
+}
+
+.spliter {
+	float : left;
+	margin : 10px 0;
+}
+
+.title {
+	float:left;
+	margin:12px 70px;
+}
+
+.item {
+	width : auto;
+    height : 34px;
+    margin : 0 4px 1px;
+    padding : 8px;
+    display : block;
+    background : black;
+    text-decoration : none;
+}
+
+.item img {
+	float : left;
+}
+
+.item h2 {
+	margin : 6px;
+    text-align : left;
+    font-size : 17px;
+    font-weight : bold;
+    float : left;
+    overflow : hidden;
+}
+
+.first {
+	border-radius: 5px 5px 0 0;
+}
+
+.last {
+	border-radius: 0 0 5px 5px;
+}

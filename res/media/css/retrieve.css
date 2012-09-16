@@ -1,0 +1,20 @@
+@import url(base.css);
+
+.category {
+	float : right;
+	margin : 10px 5px 0;
+}
+
+.spliter {
+	float : right;
+	margin : 10px 5px 0;
+}
+
+.ringtone {
+	float : left;
+	margin : 15px 15px 0;
+}
+
+.title {
+    clear : both;
+}

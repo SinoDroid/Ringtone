@@ -2,7 +2,7 @@
     <pythonpath>/var/www/Ringtone/src</pythonpath>
     <master/>
     <processes>4</processes>
-    <socket>127.0.0.1:8001</socket>
+    <socket>127.0.0.1:8000</socket>
     <env>DJANGO_SETTINGS_MODULE=ringtone.settings</env>
     <module>django.core.handlers.wsgi:WSGIHandler()</module>
 </uwsgi>

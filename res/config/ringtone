@@ -1,19 +1,26 @@
 server {
-	listen   8002; ## listen for ipv4; this line is default and implied
-	listen   [::]:80 default_server ipv6only=on; ## listen for ipv6
-
+	listen   8080
 	server_name localhost;
+
+	location  /media/admin/ {
+		alias /usr/local/lib/python2.6/dist-packages/django/contrib/admin/static/admin/;
+		autoindex on;
+		allow 127.0.0.1;
+		allow ::1;
+		deny all;
+	}
+
+	location  /media/ {
+		alias /home/qixiao/python/workspace/Ringtone/res/media/;
+		autoindex on;
+		allow 127.0.0.1;
+		allow ::1;
+		deny all;
+	}
 
 	location / {
 		include uwsgi_params;
-		uwsgi_pass 127.0.0.1:8001;	
+		uwsgi_pass 127.0.0.1:8000;	
 	}
 
-    location /media/ {
-        alias /var/www/Ringtone/res/media/;
-        autoindex on;
-        allow 127.0.0.1;
-        allow ::1;
-        deny all;
-    }
 }
